@@ -1,0 +1,287 @@
+﻿body
+{
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+p
+{
+	clear: both;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #666666;
+	margin: 0;
+	padding: 30px 0 0;
+	text-align: center;
+}
+p span
+{
+	color: #006699;
+}
+p.bada
+{
+	font-size: 16px;
+	color: #000000;
+}
+#master
+{
+	width: 700px;
+	padding: 10px;
+	margin: 10px auto;
+	border: 4px double #f68618;
+}
+#logo
+{
+	float: left;
+}
+#welcome
+{
+	float: left;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #009090;
+	font-weight: bold;
+	margin: 20px 0 0 80px;
+}
+#logout
+{
+	float: right;
+	margin: 20px 0 0;
+}
+#logout a
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color: #006699;
+	font-weight: bold;
+}
+#nav
+{
+	width: 700px;
+	margin: 0 0 10px;
+	padding: 0;
+}
+#nav ul
+{
+	width: 100%;
+	height: 43px;
+	background: #FFF url(images/menu-bg.gif) top left repeat-x;
+	font-size: 0.8em;
+	font-family: Verdana;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#nav ul li
+{
+	display: block;
+	float: left;
+	margin: 0 0 0 5px;
+}
+#nav ul li a
+{
+	color: #777;
+	text-decoration: none;
+	display: block;
+	float: left;
+	height: 43px;
+	line-height: 200%;
+	padding: 8px 15px 0;
+}
+#nav ul li a:hover
+{
+	color: #333;
+}
+#nav ul li a.current
+{
+	color: #FFF;
+	background: #FFF url( "images/current-bg.gif" ) top left repeat-x;
+	padding: 5px 15px 0;
+}
+#login, #change, #update
+{
+	margin: 20px 0 10px 0;
+}
+#iupdate
+{
+	margin: 20px 0 10px 0;
+}
+#content
+{
+	margin: 10px 0 0 0;
+}
+.clear
+{
+	clear: both;
+}
+#tabs
+{
+}
+#tabs td.text
+{
+	text-align: left;
+	font-family: Verdana;
+	font-size: 12px;
+	color: #4f0000;
+	font-weight: bold;
+}
+#tabs td.left
+{
+	text-align: right;
+	font-family: Verdana;
+	font-size: 12px;
+	color: #006699;
+	font-weight: bold;
+}
+#tabs td.right
+{
+	text-align: left;
+}
+#tabs a
+{
+	text-align: left;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: underline;
+}
+h2
+{
+	font-family: Arial;
+	color: #4c4c4c;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: underline;
+}
+#forget
+{
+	padding: 10px;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	margin: 50px 0 10px 0;
+}
+#forget p
+{
+	padding: 0;
+	margin: 2px 0;
+}
+#change
+{
+}
+h2.one
+{
+	font-family: Arial;
+	color: #4c4c4c;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 15px;
+}
+.error
+{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	text-align: center;
+}
+.error1
+{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	text-align: left;
+}
+#return
+{
+	clear: both;
+	width: 700px;
+	margin: 0;
+	padding: 0;
+}
+#return ul
+{
+	margin: 0;
+	padding: 0;
+}
+#return ul li
+{
+	float: left;
+	list-style: none;
+	padding: 0 5px;
+}
+#return ul li a
+{
+	display: block;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 2px solid #006699;
+}
+#return ul li a:hover
+{
+	border-bottom: 2px solid #ff0000;
+}
+#order
+{
+	padding: 10px;
+	width: auto;
+	margin: 0 auto;
+	width: 500px;
+}
+#binfo
+{
+	margin: 10px 0 0;
+}
+#bsrch
+{
+	width: 260px;
+	margin: 10px auto;
+}
+.b-box
+{
+	margin: 10px 0;
+}
+.bb-l
+{
+	float: left;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+	margin: 4px 0 0;
+}
+.bb-r
+{
+	float: right;
+}
+#bbtn
+{
+	text-align: center;
+}
+#b-data
+{
+	width: 600px;
+	margin: 0 auto;
+}
+#vbill
+{
+	border: 1px solid #000000;
+	width: 700px;
+	margin: 10px auto 0;
+}
+.vb-box
+{
+	margin: 10px auto;
+	width: 600px;
+	text-align: center;
+}
+.vb-box a
+{
+	color: #006699;
+	font-size: 11px;
+	font-family: Verdana;
+}

@@ -1,0 +1,193 @@
+﻿body
+{
+	background: url(images/bill-bg.gif);
+	font-family: Verdana;
+	font-size: 11px;
+	color:#000000;
+	text-align: center;
+}
+#master
+{
+	width: 100%;
+    height: 715px;
+}
+.clear
+{
+	clear: both;
+}
+#body
+{
+	width: 700px;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	background: #FFFFFF;
+}
+img
+{
+	border: none;
+}
+a
+{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000000;
+}
+#head
+{
+	text-align: left;
+}
+#img
+{
+	border-bottom: 2px solid #000000;
+	padding: 0 0 10px 0;
+}
+
+
+/*************************
+ Shipping page-css start 
+*************************/
+
+.ship-data
+{
+	margin: 10px auto;
+}
+#ship-q
+{
+	width: 300px;
+	margin: 10px auto;
+}
+.sq-l
+{
+	float: left;
+	color: #562159;
+	font-size: 11px;
+	padding: 3px 0;
+}
+.sq-r
+{
+	float: right;
+	color: #cd3434;
+	font-size: 11px;
+	padding: 3px 0;
+}
+table#sh-log
+{
+	margin: 0 auto;
+}
+table#sh-log td
+{
+	padding: 2px;
+}
+table#sh-log td.st-l
+{
+	text-align: right;
+	width: 200px;
+	color: #562159;
+	font-size: 10px;
+}
+table#sh-log td.st-r
+{
+	text-align: left;
+}
+table#sh-log td.mode
+{
+	text-align: center;
+	padding: 20px 0 5px;
+	font-weight: bold;
+}
+
+/*************************
+ Bill page-css start 
+*************************/
+
+#name
+{
+	padding: 8px 0 20px;
+	text-indent: .5em;
+}
+#name em
+{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #006699;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+#other
+{
+	width: 650px;
+	margin: 0 auto 20px;
+}
+#other em
+{
+	color: #c30000;
+}
+.o-left
+{
+	float: left;
+	margin: 0 0 10px;
+}
+.o-right
+{
+	float: right;
+	margin: 0 0 10px;
+}
+.s_add
+{
+	width: 300px;
+	text-align: right;
+}
+kbd
+{
+	color: #c30000;
+}
+.clear1
+{
+	clear: both;
+	border-top: 1px dotted #4d1b51;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+#order
+{
+	padding: 0 0 10px;
+	width: auto;
+	margin: 0 auto;
+	width: 500px;
+}
+#payment
+{
+	padding: 0 0 10px;
+	width: auto;
+	margin: 0 auto;
+	width: 500px;
+	clear: both;
+}
+ul#pay
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+ul#pay li
+{
+	float: left;
+	margin: 5px 0;
+	padding: 0 0 0 15px;
+	list-style: none;
+	width: 230px;
+	text-align: right;
+	color: #541e55;
+}
+ul#pay li.bul
+{
+	background: url(images/bullet-pay.gif) no-repeat 0% 40%;
+	text-align: left;
+	color: #000000;
+}
+a.print:active
+{
+	color: #FFFFFF;
+	background: #000000;
+}

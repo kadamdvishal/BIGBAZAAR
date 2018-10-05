@@ -1,0 +1,163 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>BIG BAZAAR</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="SmartJSFunctions.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="sm" runat="server"></asp:ScriptManager>
+    <div id="master">
+        <div id="main">
+            <div id="header">
+                <div id="h-top">
+                    <div id="ht-l">
+                        <img src="images/logo.gif" alt="" id="IMG1" />
+                    </div>
+                    <div id="ht-r">
+                        <div class="htr-r">
+                            <p class="lang">Choose Your Language</p>
+                            <a href="#"><img src="images/lang/l1.gif" alt="" /></a> 
+                            <a href="#"><img src="images/lang/l2.gif" alt="" /></a> 
+                            <a href="#"><img src="images/lang/l3.gif" alt="" /></a>
+                            <a href="#"><img src="images/lang/l4.gif" alt="" /></a>
+                            <a href="#"><img src="images/lang/l5.gif" alt="" /></a>
+                        </div>
+                        <div class="htr-r">
+                            <p class="lang">Currency</p>
+                            <select class="drop">
+                                <option>US Doller1</option>
+                                <option>US Doller2</option>
+                                <option>US Doller3</option>
+                                <option>US Doller4</option>
+                                <option>US Doller5</option>
+                            </select>
+                        </div>
+                        <div class="htr-r">
+                            <p class="lang">Shopping Cart</p>
+                            <p class="lang1">Items in your Shopping cart</p>
+                            <%if (Session["addtocart"] == null)
+                              { %>
+                            <p class="lang">0 Items</p>
+                            <%}
+                              else
+                              {
+                                  lblItems.Text = Session["ITEMS"].ToString();
+                                  %>
+                            <p class="lang"><asp:Label ID="lblItems" runat="server"></asp:Label> Items</p>
+                            <%} %>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="menu">
+                <ul>
+                    <li><a id="A1" href="~/index.aspx" runat="server" title="Home">Home</a></li>
+                    <li><a id="A2" href="#" title="New Product" runat="server" >New Product</a></li>
+                    <li><a id="A3" href="~/UserProfile.aspx" runat="server" title="My Account">My Account</a></li>
+                    <li><a id="A4" href="ShowAddtocart.aspx"  runat="server" title="Shopping cart">Shopping Cart</a></li>
+                    <li><a id="A5" href="~/Contact.aspx" runat="server" title="Contact Us">Contact Us</a></li>
+                    <li><a id="A6" href="~/About.aspx" runat="server" title="About Us">About Us</a></li>
+                    <li><a id="A7" href="~/terms_condition.aspx" runat="server" title="Site Map">Terms &amp; Cond.</a></li>
+                    <li><a id="A8" href="~/sitemap.aspx" runat="server" title="Site Map">Site Map</a></li>
+                </ul>
+            </div>
+            
+            <div id="quick">
+                <div id="q-left">
+                    <div id="ql-l">
+                        Quick Search
+                    </div>
+                    <div id="ql-r">
+                        <asp:TextBox ID="TextBox1" runat="server" Width="110px" ></asp:TextBox>
+                    </div>
+                </div>
+                <div id="q-right">
+                    <div id="menus">
+                        <ul>
+                            <li><a id="B1" href="~/index.aspx" runat="server" title="New Release">New Release</a></li>
+                            <li><a id="B2" href="#" title="Search">Search</a></li>
+                            <li>
+                            <%if (Session["UID"] == null)
+                              { %>
+                                <a id="B3" href="UserForgetPassword.aspx" runat="server" title="Contact us">Forget Password</a>
+                            <%}
+                              else
+                              {%>
+                              <a id="B4" href="Changepassword.aspx" runat="server" title="Contact us">Change Password</a>
+                              <%} %>
+                            </li>
+                            <li><a id="B5" href="~/UserRegistration.aspx" runat="server" title="Register">Register</a></li>
+                            <%if (Session["UID"] == null)
+                              { %>
+                            <li><a id="B6" href="userLogin.aspx" runat="server" title="Login">Login</a></li>
+                            <%}else{
+                                  lblUser.Text = "Welcome : " + Session["FULLNAME"].ToString(); %>
+                             
+                               <li><asp:LinkButton ID="lnkOut" runat="server" Text="Logout" onclick="lnkOut_Click" CausesValidation="false"></asp:LinkButton></li>
+                               <li><a href="#"><asp:Label ID="lblUser" ForeColor="Green" runat="server"></asp:Label></a></li>
+                              <%} %>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            
+            <div id="anim">
+                <div id="anim-l" style="position:absolute;">
+                    <img src="images/side-image.gif" alt="" id="IMG2"  />
+                </div>
+                <div id="anim-r">
+                    <img src="images/anim.gif" alt="" />
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            
+            <div id="wrapper">
+                <div id="wr-left" style="vertical-align:top;">
+                    <div id="db-menu">
+                        <span class="title">Category</span>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=it217;Initial Catalog=BigBazaar;Integrated Security=True"
+                            ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Adminlogin]">
+                        </asp:SqlDataSource>
+                    </div>
+                    <div id="dbm-list" style="vertical-align:top;">
+                        <asp:Menu ID="Menu1" runat="server" Width="80%" OnMenuItemClick="Menu1_MenuItemClick1">
+                        </asp:Menu>
+                    </div>
+                </div>
+                <div id="wr-right">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div id="footer">
+                <div id="foot1">
+                    <img src="images/paypal.gif" alt="" /></div>
+                <div id="site">
+                    Site Designed & Developed By - I-tech pvt ltd (Inshul Sahaney; Vishal Kadam)</div>
+                <div id="foot2">
+                    <asp:Label ID="lblErr" runat="server"></asp:Label>
+                    <a href="~/index.aspx" runat="server">Home</a> | <a href="~/Contact.aspx" runat="server">Contact Us</a> | <a href="~/About.aspx" runat="server">
+                        About Us</a> | <a href="~/Sitemap.aspx" runat="server">Sitemap</a>
+                    <br />
+                    &copy; 2013, All right reserved.
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
