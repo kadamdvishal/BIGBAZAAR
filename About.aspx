@@ -22,6 +22,6 @@
         Bank A/c, direct transfer from your ICICI or HDFC bank a/c to our ICICI or HDFC
         bank a/c We constantly try to add new and unique products to our website and thrive
         to improve our services to give you a comfortable online shopping experience. We
-        welcome your valuable suggestions, please mail your feedback / suggestions.
+        welcome your valuable suggestions, please mail your feedback / suggestions. 
     </div>
 </asp:Content>
