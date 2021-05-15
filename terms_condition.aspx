@@ -58,7 +58,7 @@
             to direct, indirect, incidental, punitive, and consequential damages. The Service(s)
             of HomeShop18 is provided on an "as is" basis without warranties of any kind, whether
             express or implied. HomeShop18 does not represent or warrant maintaining the confidentiality
-            of information; although HomeShop18ís current practice is to ensure reasonable efforts
+            of information; although HomeShop18‚Äôs current practice is to ensure reasonable efforts
             to maintain such confidentiality. It is also clearly understood that all warranties,
             implied or express take place between the vendors and the User. HomeShop18 does
             not endorse in anyway any advertisers/ contents of advertisers on its web pages
@@ -196,7 +196,7 @@
             Price is a comparative price estimate and may or may not represent the prevailing
             price in every area on any particular day. For certain items that are offered as
             a set/pack/combo/arrangement, the Selling Price/List Price/HS18 price may represent
-            ìopen-stockî prices, which mean the aggregate of the manufacturer's estimated or
+            ‚Äúopen-stock‚Äù prices, which mean the aggregate of the manufacturer's estimated or
             suggested retail price for each of the items included in the set/pack/combo/arrangement.</p>
         <p class="h">
             Material Submitted by Users</p>
